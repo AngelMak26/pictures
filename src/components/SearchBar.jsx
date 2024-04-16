@@ -1,4 +1,4 @@
-function ImageBar(){
+function SearchBar(){
     return(
         <div>
             <h1>Search bar: </h1>
@@ -6,4 +6,4 @@ function ImageBar(){
     )
  }
 
- export default ImageBar
+ export default SearchBar
