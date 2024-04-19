@@ -11,6 +11,7 @@ function SearchBar({ onSubmit }){
 
     const handleChange = (event) => {
         console.log(event.target.value)
+        setTerm(event.target.value)
     }
 
     const handleClick = () => {
@@ -19,14 +20,14 @@ function SearchBar({ onSubmit }){
 
     return(
         <div>
-            <h1>Search bar: </h1>
+            <h1>Search Bar </h1>
             <form onSubmit={handleFormSubmit}>
                 Confirma tu busqueda: {term}
                 <input onChange={handleChange} value={term}/>
             </form>
-            <button onClick={handleClick}>Click me</button>
+            <button onClick={handleClick}>Click Me! </button>
         </div>
     )
- }
+}
 
- export default SearchBar
+export default SearchBar
