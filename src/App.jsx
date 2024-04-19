@@ -11,7 +11,6 @@ function App() {
     console.log('uste esta buscando con:', term)
     const result = await searchImage(term)
 
-    console.log('coco')
     console.log(result)
 
     setImages(result)
@@ -20,7 +19,6 @@ function App() {
 
   return (
     <div>
-      <h1>App</h1>
       <SearchBar onSubmit={handleSubmit} />
       <ImageList images={images} />
     </div>
